@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media queries для адаптивної верстки.</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="/kurs_imgs/general22.png">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media queries для адаптивної верстки.</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src='script.js' defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-</head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+          crossorigin="anonymous"></script>
+          <script src='script.js' async></script>
+      </head>
+
+
 
 <body>
-  
-  <div class='main-sector'>
-    <div class = 'wrapper'>
-    
-      <header>
-        <nav class="navbar navbar-expand-lg text-bg-none p-3  ">
-          <div class="container">
-            <button class="navbar-toggler btn-toggler bg-white " type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon span-toggler"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <div class='container'>
-                <div class='content-header'>
-                  <div class="d-flex justify-content-between">
-                    <a href = 'index.html'><div> <img class='imgs first-img' src="kurs_imgs/general.png" alt=""> </div></a>
-                    <a href = 'media.html'> <div> <img class='second-img' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </div></a>
-                    <a href = 'aboutUs.html'><div> <img class='second-img' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </div></a>
+
+
+
+    <div class = 'main-sector-3'>
+        <div class = 'wrapper'>
+            <header>
+                <nav class="navbar navbar-expand-lg text-bg-none p-3  ">
+                  <div class="container">
+                    <button class="navbar-toggler bg-white  " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <div class='container'>
+                        <div class='content-header'>
+                          <div class="d-flex justify-content-between">
+                            <a href = 'index.html'><div> <img class='imgs first-img' src="kurs_imgs/general.png" alt=""> </div></a>
+                            <a href = 'media.html'> <div> <img class='second-img' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </div></a>
+                            <a href="aboutUs.html"><div> <img class='second-img' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </div></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </nav>
+              </header>
+
+
+
+
+              <div class = 'about-us-main'>
+                <div class="container">
+
+                  <div class = 'row about-us-title general_h'>                    
+                    <h1 >ПРО НАС</h1>
+                  </div> 
+                          
+                  <div class="row contacts-about-us">
+                     
+                    <div class = 'col-xl-4'>
+                      <p class = 'p-about-us'>
+                        "Харківський національний університет радіоелектроніки" <br>
+                        61166 проспект Науки, 14 <br>
+                        Харківська область, <br>
+                        Харкiв  
+                      </p>
+                    </div>
+                    <div class = 'col-xl-3'>
+                        <p class = 'p-about-us'>
+                          123-456-7890 <br>
+                          alona.rykhtik@nure.ua 
+                      </p>
+                    </div> 
+                  </div>
+
+                  <div class = 'btn-about-us-container'>
+                    <a href = 'https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTJnjNhcWkrqDxbnfhfJbBMBNGlRgNggGFnDvBDXjfrFlldjQcHxHxXwVqBqcRLbKhMVsq'> 
+                      <button ><span>Надiслати листа -></span></button> 
+                    </a>
+                  </div>
+                 
+                  
+
+
+                </div>             
               </div>
-            </div>
-          </div>
-        </nav>
-      </header>
 
-      <div class = 'about-us-main-2'>
-        <div class="container ">
-          <div class="row general_h title-main">
-            <h1 class ='shadow-text'>ГОЛОВНА</h1>
-          </div>
 
-          <div class="row cont-main">
-            <div class="col-xl-8 mb-5"> 
-                <p class = 'p-info-2 shadow-text'>
-                  Добрий день. 
-                  Ви на сайті, 
-                  основною  темою якого є наочний приклад та огляд теми 
-                  "Практика використання Media queries для адаптивної верстки. Приклади"
-                </p>
-            </div>
-            <div class="col-xl-4 mb-5">
-              <a href ='media.html'><button class = 'btn-main' font-size = '24px'><span>Детальнiше -></span></button></a>
-            </div>
-          </div>
+
         </div>
+    </div>
+
     
-    
-  </div>
+                   
+       
 
 
-
-  
-
-
-</div> 
-
-  
-
-
-
-<footer>  
-  <div class = 'footer-conent'>
-    <div class="container-fluid">
-    <div class = 'footer-container'>
-      
-        <div class = 'footer-title-imgs-1'>               
-          <div class = 'footer-span-text'> <a href = 'index.html'><img class='first-img footer-img footer-img-1' src="kurs_imgs/general.png" alt="">  </a>
-            <a href="index.html"><span class = 'ff'>Головна</span></a>
+    <footer>  
+      <div class = 'footer-conent'>
+        <div class="container-fluid">
+        <div class = 'footer-container'>
+          
+            <div class = 'footer-title-imgs-1'>               
+              <div class = 'footer-span-text'> <a href = 'index.html'><img class='first-img footer-img footer-img-1' src="kurs_imgs/general.png" alt="">  </a>
+                <a href="index.html"><span class = 'ff'>Головна</span></a>
+              </div> 
+              
+              <div class = 'footer-span-text sec-box'> <a href = 'media.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </a>
+                <a href = 'media.html'><span class = 'ff'>Читачу</span></a>
+              </div >             
+              <div class = 'footer-span-text th-box'> <a href = 'aboutUs.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </a>
+                <a href = 'aboutUs.html'><span class = 'ff'>Про нас</span></a>
+              </div>       
+            </div>                 
+            
+          
+          <div class ='footer-title-imgs-2'>
+            <a href="https://twitter.com/knure_ua"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-twitter-6422210.png" alt=""> </div></a>
+            <a href="https://www.facebook.com/nuretv"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-facebook-6422199.png" alt=""></div></a>
+            <a href="https://www.instagram.com/nure_tv/?hl=ru"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-instagram-6422200.png" alt=""> </div></a>
           </div> 
           
-          <div class = 'footer-span-text sec-box'> <a href = 'media.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </a>
-            <a href = 'media.html'><span class = 'ff'>Читачу</span></a>
-          </div >             
-          <div class = 'footer-span-text th-box'> <a href = 'aboutUs.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </a>
-            <a href = 'aboutUs.html'><span class = 'ff'>Про нас</span></a>
-          </div>       
-        </div>                 
-        
-      
-      <div class ='footer-title-imgs-2'>
-        <a href="https://twitter.com/knure_ua"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-twitter-6422210.png" alt=""> </div></a>
-        <a href="https://www.facebook.com/nuretv"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-facebook-6422199.png" alt=""></div></a>
-        <a href="https://www.instagram.com/nure_tv/?hl=ru"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-instagram-6422200.png" alt=""> </div></a>
-      </div> 
-      
+        </div>
     </div>
-</div>
-</footer>
-
-
-
-
-
-
+    </footer>
+   
 </body>
-
 </html>
