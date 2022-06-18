@@ -532,6 +532,12 @@ footer{
     
 }
 
+@media (min-width:250px), (max-width:340px){
+    .btn-main{
+        width: 80%;
+    }
+}
+
 .c-bg span{
     background-color: red;
     border-radius: 20%;
@@ -699,7 +705,7 @@ footer{
 
 
 
-@media  (min-width:400px) and (max-width:1200px){
+@media  (min-width:270px) and (max-width:1200px){
     .upward{
         right: -90px
     }
