@@ -159,6 +159,7 @@ header{
 	color: white;
 	padding: 20px 20px 20px 10px;
     width: 80%;
+    text-align: center;
     
 }
 
@@ -527,14 +528,7 @@ footer{
     width: 60%;
     white-space: nowrap;
     font-size: 24px;
-}
-
-
-@media  (min-width:1201px), (min-width:1450px){
-    .btn-main{
-        width:80%;
-    }
-    
+    text-align: center;
 }
 
 @media (min-width:250px), (max-width:340px){
@@ -542,6 +536,14 @@ footer{
         width: 80%;
     }
 }
+@media  (min-width:1201px), (min-width:1450px){
+    .btn-main{
+        width:90%;
+    }
+    
+}
+
+
 
 .c-bg span{
     background-color: red;

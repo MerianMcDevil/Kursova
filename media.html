@@ -8,7 +8,7 @@
   <title>Media queries для адаптивної верстки.</title>
   <link rel="stylesheet" href="./style.css">
   <script src='script.js' defer></script>
-  <link rel="icon" type="image/x-icon" href="kurs_imgs/general22.png">
+  <link rel="icon" type="image/x-icon" href="/kurs_imgs/general22.png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -189,9 +189,9 @@
                 Наприклад, можна прописати media queries у порядку збільшення розмірів для кількох класів пристроїв: <br>
 
                 <code class = 'code-example'>
-                  @media (min-width: 768px) { /* Стилі для пристроїв з маленьким екраном, розмірами 768px - 991px (планшети та подібні) */ } <br>
-                  @media (min-width: 992px) {  /* Стилі для ноутбуків та комп'ютерів з екранами в діапазоні 992px – 1199px */ } <br>
-                  @media (min-width: 1200px) {  /* Стилі для пристроїв із великою шириною екрану >1200px   */ } <br>
+                  @media (min-width: 768px) {/* Стилі для пристроїв з маленьким екраном, розмірами 768px - 991px (планшети та подібні) */} <br>
+                  @media (min-width: 992px) {/* Стилі для ноутбуків та комп'ютерів з екранами в діапазоні 992px – 1199px */} <br>
+                  @media (min-width: 1200px) {/* Стилі для пристроїв із великою шириною екрану >1200px  */} <br>
                 </code>
 
                 Використовувати ці медіа-запити потрібно виключно у такому порядку. 
@@ -199,18 +199,18 @@
                 Тобто вкажіть повноцінний діапазон розмірів екранів у Bootstrap 3: <br> 
 
                 <code class = 'code-example'>
-                  @media (max-width: 767px) { ... } <br>
-                  @media (min-width: 768px) and (max-width: 991px) { ... } <br>
-                  @media (min-width: 991px) and (max-width: 1199px) { ... } <br>
-                  @media (min-width: 1200px) { ... } <br>
+                  @media (max-width: 767px) {...} <br>
+                  @media (min-width: 768px) and (max-width: 991px) {...} <br>
+                  @media (min-width: 991px) and (max-width: 1199px) {...} <br>
+                  @media (min-width: 1200px) {...} <br>
                 </code>
                 Якщо мова йде про медiа-запити в Bootsrap 4,  
                 то можна написати таке поступове збільшення найменшої ширини екрана: <br> 
                 <code class = 'code-example'>
-                  @media (min-width: 576px) { /* CSS для экранiв розмiрами: 576px – 767px */ } <br>
-                  @media (min-width: 768px) {  /* CSS для: 768px – 991px */ } <br>
-                  @media (min-width: 992px) { /* CSS для: 992px – 1119px */ } <br>
-                  @media (min-width: 1200px) {  /* CSS для экранiв бiльше 1200px */ } <br>
+                  @media (min-width: 576px) {/* CSS для экранiв розмiрами: 576px – 767px */} <br>
+                  @media (min-width: 768px) {/* CSS для: 768px – 991px */} <br>
+                  @media (min-width: 992px) {/* CSS для: 992px – 1119px */} <br>
+                  @media (min-width: 1200px) {/* CSS для экранiв бiльше 1200px */} <br>
                 </code>
                   Подiбнi запити, але з максимальним значенням можна застосовувати у зворотному порядку,
                   щоб йшло спадання розмірів екрана. Якщо ви хочете писати медіа-запити у випадквiй
@@ -219,11 +219,11 @@
                 Тоді фрагмент коду виглядатиме ось так: <br>
                 
                 <code class = 'code-example'>
-                  @media (max-width: 575px) { ... } <br>
-                  @media (min-width: 576px) and (max-width: 767px) { ... } <br>
-                  @media (min-width: 768px) and (max-width: 991px) { ... } <br>
-                  @media (min-width: 992px) and (max-width: 1199px) { ... } <br>
-                  @media (min-width: 1200px) { ... } <br>
+                  @media (max-width: 575px) {...} <br>
+                  @media (min-width: 576px) and (max-width: 767px) {...} <br>
+                  @media (min-width: 768px) and (max-width: 991px) {...} <br>
+                  @media (min-width: 992px) and (max-width: 1199px) {...} <br>
+                  @media (min-width: 1200px) {...} <br>
                 </code>
               </p>
             </div>
