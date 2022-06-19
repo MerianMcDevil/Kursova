@@ -9,6 +9,14 @@ body{
 p, h1, span{
     font-family: "Garet";
 }
+
+.h1-created{
+    font-family: "Montserrat-Medium";
+}
+
+h1{
+    font-weight: bold;
+}
 div img p h1{
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -30,10 +38,6 @@ div img p h1{
     border-radius: 2px;
 }
 
-/* Handle on hover */
-/*::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-}*/
 
 .footer-span-text a{
     text-decoration: none;
@@ -725,4 +729,12 @@ footer{
     font-style: normal; 
     font-weight: normal;    
 }
+
+@font-face {
+    font-family: Montserrat-Medium ;
+    src: url('fonts/Montserrat-Medium.ttf');
+    font-style: normal; 
+    font-weight: normal;    
+}
+
 
