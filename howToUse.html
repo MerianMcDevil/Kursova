@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media queries для адаптивної верстки.</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src='script.js' defer></script>
+  <link rel="icon" type="image/x-icon" href="kurs_imgs/general22.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+    <div class = 'main-sector-2'>
+        <div class = 'wrapper'>
+
+
+        <header class = 'media-header'>
+          <nav class="navbar navbar-expand-lg text-bg-none p-3  ">
+            <div class="container">
+              <button class="navbar-toggler bg-white  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class='container'>
+                  <div class='content-header'>
+                    <div class="d-flex justify-content-between">
+                      <a href = 'index.html'><div> <img class='imgs first-img' src="kurs_imgs/general.png" alt=""> </div></a>
+                      <a href = 'redirect.html'> <div> <img class='second-img' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </div></a>
+                      <a href="aboutUs.html"><div> <img class='second-img' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+
+
+        
+          
+        <div class = 'text-content'>            
+          <div class="container">
+ 
+        <div class = 'row'>
+                    <div class='col-xl-4 mb-5 present-pict second'><img src="./kurs_imgs/2.png" alt=""></div>
+        
+                    <div class='col-xl-8 mb-5 order-xl-2'>
+                        <h1 class = 'h-media h1-created'>Синтаксис медіа-запитiв</h1>
+                        <p class = 'p-info'>Запис медіа-запитiв на сайті виглядає ось так:<br>                  
+                        <code class='code-example'>
+                            @media умова { /* стилі, які стають активними за умови }
+                        </code> 
+                        <br>
+                        Можна додавати їх у HTML-частини сайту, всередині таблиць CSS, а також напрямок у коді сторінки. 
+                        Якщо мова іде про старі браузери, то можна підключити спеціальну JavaScript-бібліотеку, 
+                        щоб медіа-запити коректно працювали.                  
+                        </p>                
+                    </div>
+
+                    </div>
+
+                    <div class = 'row'>
+                    <div class='col-xl-4 mb-5 present-pict order-xl-2 third'><img src="./kurs_imgs/3.png" alt=""></div>
+
+                    <div class = 'col-xl-8 mb-5 '>
+                        <h1 class = 'h-media h1-created'>Головні види пристроїв, які можна записати в медіа-запитах:</h1>
+                        <p class = 'p-info'>
+                        – Всi пристрої - <code class='code-example'>all;</code> <br>
+                        – Пристрої з екранами - <code class='code-example'>screen;</code> <br>
+                        – Cинтезатори мови - <code class='code-example'>speach;</code> <br>
+                        – Принтери або сторінка попереднього перегляду для друку - <code class='code-example'>print.</code><br>
+
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class = 'row'>
+                    <div class='col-xl-4 mb-5 present-pict fourth'><img src="./kurs_imgs/4.png" alt=""></div>
+
+                    <div class = 'col-xl-8 mb-5 p-info order-xl-2'>
+                        <h1 class = 'h-media h1-created'> Логiчнi оператори</h1>
+                        <p class = 'p-info'>
+                        Також в медiа-запитах можуть утримувати в собi логiчнi оператори:<br>
+                        – <code class='code-example'>and</code> - вci умови повиннi виконувутися одночасно;<br>
+                        – <code class='code-example'>,</code> - хоча б одна умова повинна бути виконана;<br>
+                        – <code class='code-example'>not</code> - заперечення умови (має нижчий пріоритет, ніж <code class = 'code-example'>and</code>, отже виконуватиметься після нього).<br>
+
+
+
+                        </p>
+                    </div>
+                    </div>
+
+
+                    <div class = 'row'>
+                    <h1 class = 'h-media h1-created'>Функцiї</h1>
+                    <p class = 'p-info'>
+                        – <code class='code-example'>width</code> (<code class='code-example'>max-width</code> та
+                        <code class='code-example'>min-width</code>) — 
+                        визначає вимоги до ширини браузера, 
+                        найбільше та найменше значення цього параметра в пікселях або інших одиницях: 
+                        <code class = 'code-example'>@media(width: 720px)</code>; <br>
+
+                        – <code class = 'code-example'>height</code>, <code class = 'code-example'>min-height</code> і 
+                        <code class = 'code-example'>max-height</code> — 
+                        прописує вимоги до висоті браузера, 
+                        аналогічно до функцій ширини: <code class = 'code-example'>@media (max -height: 1080px)</code>;<br>
+
+                        – <code class = 'code-example'>color</code> визначає кількість біт на канал кольору
+                        (також є значення <code class = 'code-example'>min</code> та <code class = 'code-example'>max</code>);<br>
+
+                        – <code class = 'code-example'>aspect-ratio</code> (<code class = 'code-example'>min-aspect-ratio</code>, 
+                        <code class = 'code-example'>max-aspect-ratio</code>) — 
+                        відношення ширини до висоти: <code class = 'code-example'>@media screen and (device-aspect-ratio: 1920/1080)</code>;<br>
+
+
+                        – <code class = 'code-example'>orientation</code> — оцінює режим відображення сторінки: портретний 
+                        (<code class = 'code-example'>portrait</code>) або альбомний (<code class = 'code-example'>landscape</code>);<br>
+
+                        – <code class = 'code-example'>resolution</code> (<code class = 'code-example'>min-resolution</code>, <code class = 'code-example'>max-resolution</code>) — 
+                        це дозвіл пристрою введення: необхідний, мінімальний та максимальний; вимірюється в dpi, dpcm чи dppx.
+
+                        
+                    </p>
+                    </div>
+
+                    <div class = 'row'>
+                    <h1 class = 'h-media h1-created' >Які бувають медіа-запити</h1>
+                    <p class = 'p-info'>
+                        Медіа-запити можуть записуватися як атрибут для елемента <code class = 'code-example'>link</code>. 
+                        Це допомагає визначити, які файли CSS-таблиць потрібно активувати на сторінці в залежності 
+                        від параметрів пристрою. Такий функціонал найчастіше використовується, 
+                        коли до різних типів технічного обладнання використовуються різні стилі CSS. <br>
+
+                        Наведемо приклад фрагмента коду, який ілюструє підключення файлу <code class = 'code-example'>styles-xs.css</code> для пристроїв, 
+                        розмір екрану яких менше 543 пікселів: <br>
+                        <code class = 'code-example'>link rel="stylesheet" media="screen and (max-width: 543px)" href="styles-xs.css"</code> <br>
+
+                        Також подібні запити можна включати до складу правила <code class = 'code-example'>@import</code>, що відповідає за імпорт стилів з інших файлів CSS. 
+                        Так, для того ж файлу можна записати наступний код: <br>
+
+                        <code class = 'code-example'> @import url(styles-xs.css) (max-width: 543px);</code> <br>
+
+                        Медіа-запити можна реалізувати для Bootstrap 3 та Bootstrap 4. 
+                        Наприклад, можна прописати media queries у порядку збільшення розмірів для кількох класів пристроїв: <br>
+
+                        <code class = 'code-example'>
+                        @media (min-width: 768px) {/* Стилі для пристроїв з маленьким екраном, розмірами 768px - 991px (планшети та подібні) */} <br>
+                        @media (min-width: 992px) {/* Стилі для ноутбуків та комп'ютерів з екранами в діапазоні 992px – 1199px */} <br>
+                        @media (min-width: 1200px) {/* Стилі для пристроїв із великою шириною екрану >1200px  */} <br>
+                        </code>
+
+                        Використовувати ці медіа-запити потрібно виключно у такому порядку. 
+                        Якщо ви хочете застосовувати їх у довільній послідовності, додайте в них максимальне значення. 
+                        Тобто вкажіть повноцінний діапазон розмірів екранів у Bootstrap 3: <br>
+
+
+                        <code class = 'code-example'>
+                        @media (max-width: 767px) {...} <br>
+                        @media (min-width: 768px) and (max-width: 991px) {...} <br>
+                        @media (min-width: 991px) and (max-width: 1199px) {...} <br>
+                        @media (min-width: 1200px) {...} <br>
+                        </code>
+                        Якщо мова йде про медiа-запити в Bootsrap 4,  
+                        то можна написати таке поступове збільшення найменшої ширини екрана: <br> 
+                        <code class = 'code-example'>
+                        @media (min-width: 576px) {/* CSS для екранiв розмiрами: 576px – 767px */} <br>
+                        @media (min-width: 768px) {/* CSS для: 768px – 991px */} <br>
+                        @media (min-width: 992px) {/* CSS для: 992px – 1119px */} <br>
+                        @media (min-width: 1200px) {/* CSS для екранiв бiльше 1200px */} <br>
+                        </code>
+                        Подiбнi запити, але з максимальним значенням можна застосовувати у зворотному порядку,
+                        щоб йшло спадання розмірів екрана. Якщо ви хочете писати медіа-запити у випадковiй
+                        послідовності в таблиці стилів, то вкажіть точні проміжки, тобто одразу пропишіть
+                        <code class = 'code-example'>min-width</code> и <code class = 'code-example'>max-width</code>. 
+                        Тоді фрагмент коду виглядатиме ось так: <br>
+                        
+                        <code class = 'code-example'>
+                        @media (max-width: 575px) {...} <br>
+                        @media (min-width: 576px) and (max-width: 767px) {...} <br>
+                        @media (min-width: 768px) and (max-width: 991px) {...} <br>
+                        @media (min-width: 992px) and (max-width: 1199px) {...} <br>
+                        @media (min-width: 1200px) {...} <br>
+                        </code>
+                    </p>
+                    </div>
+
+                    <div class = 'row'>
+                        <h1 class = 'h-media h1-created' >Стратегії використання медіа-запитiв</h1>
+                        <p class = 'p-info'>
+                            Для створення дизайну, що дозволяє найкраще відображати сайт на різних пристроях, використовують 
+                            загальні стратегії медіа-запитів:<br>
+                            •	Зменшення кількості колонок (стовпців) та поступове скасування обтікання для мобільних пристроїв;<br>
+                            •	Використання властивості <code class = 'code-example'>max-width</code> замість <code class = 'code-example'>width </code>за завдання ширини блока-контейнера;<br>
+                            •	Зменшення полів та відступів на мобільних пристроях (наприклад, нижніх відступів між заголовком та текстом, 
+                            лівого відступу для списків тощо);<br>
+                            •	Зменшення розмірів шрифтів для мобільних пристроїв;<br>
+                            •	Перетворення лінійних навігаційних меню в розкривні;<br>
+                            •	Приховування другорядного вмісту на мобільних пристроях за допомогою display: none;<br>
+                            •	Підключення фонових зображень зменшених розмірів.<br>
+                            <h1 class = 'h-media h1-created'>Практика створення адаптивного макету</h1>
+                            <p class = 'p-info'>Уявимо, що нам потрібно зробити адаптивний макет, розберемо як це зробити за кроками:<br>
+                                Крок №1 – створюємо html файл
+                                Формуємо скелет майбутньої html сторінки <br>
+                                <code class = 'code-example'>
+                                    
+                                    &ltdiv class="container"><br>
+                                    &ltmain class="main"><br>
+                                         MAIN<br>
+                                        &lt/main><br>
+                                        &ltaside class="aside"><br>
+                                              ASIDE<br>
+                                              &lt/aside><br>
+                                              &lt/div><br>                                    
+                                </code>
+                                Крок №2 – додаємо тег >&ltstyle>
+                                    На початок створеного html файлу додаємо тег&ltstyle>
+                                    для визначення стилів компонентів сторінки. Робимо відступ 0 і додаємо гнучкий контейнер 
+                                    (display: flex та flex-wrap: wrap). 
+                                    Потім вказуємо ширину та мінімальну висоту (у пікселях) для елементів aside
+                                    та main:<br>
+                                    <code class = 'code-example'>
+                                        body {<br>
+                                               margin: 0;<br>
+                                            }<br>
+                                            .container {<br>
+                                               display: flex;<br>
+                                               flex-wrap: wrap;<br>
+                                            }<br>
+                                            .aside, .main {<br>
+                                               width: 100%;<br>
+                                               min-height: 1px;<br>
+                                            }<br>
+                                    </code>
+                                    Крок №3 – формуємо розміри блоків для хв. дозволу 990px
+                                    Вводимо перший медіа-запит, щоб вказати мінімальну ширину елемента 
+                                    (990px) та додати параметри aside (flex: 33,3% або <=990px) та main (flex: 66,6%): <br>
+
+                                    <code class = 'code-example'>
+                                        @media (min-width: 990px) { <br>
+                                            .aside {<br>
+                                              flex: 0 0 33.333333%;<br>
+                                              max-width: 33.333333%;<br>
+                                              order: 1;<br>
+                                            }<br>
+                                            .main {<br>
+                                              flex: 0 0 66.666667%;<br>
+                                              max-width: 66.666667%;<br>
+                                              order: 2;<br>
+                                            }<br>
+                                           }<br>                                         
+                                    </code>
+                                    Крок №4 – формуємо розміри блоків для хв. дозволу 1400px
+                                        Вводимо другий медіа-запит –  вказуємо мінімальну ширину елемента 1400px 
+                                        і аналогічно прописуємо aside (flex і max-width: 25%) та main (flex і max-width: 75%): <br>
+                                    <code class = 'code-example'>
+                                        @media (min-width: 1400px) {<br>
+                                            .aside {<br>
+                                              flex: 0 0 25%;<br>
+                                              max-width: 25%;<br>
+                                            }<br>
+                                            .main {<br>
+                                              flex: 0 0 75%;<br>
+                                              max-width: 75%;<br>
+                                            }<br>
+                                           }<br>
+                                         
+                                    </code>
+
+                                    Крок №5 – підсумковий html файл
+                                    У підсумку, цілий код може виглядати так: <br>
+
+                                    <code class = 'code-example'>
+                                        &ltstyle><br>
+                                            body {<br>
+                                               margin: 0;<br>
+                                            }<br>
+                                            .container {<br>
+                                               display: flex;<br>
+                                               flex-wrap: wrap;<br>
+                                            }<br>
+                                            .aside, .main {<br>
+                                               width: 100%;<br>
+                                               min-height: 1px;<br>
+                                            }<br>
+                                            @media (min-width: 992px) {<br>
+                                             .aside {<br>
+                                               flex: 0 0 33.333333%;<br>
+                                               max-width: 33.333333%;<br>
+                                               order: 1;<br>
+                                             }<br>
+                                             .main {<br>
+                                               flex: 0 0 66.666667%;<br>
+                                               max-width: 66.666667%;<br>
+                                               order: 2;<br>
+                                             }<br>
+                                            }<br>
+                                            @media (min-width: 1400px) {<br>
+                                             .aside {<br>
+                                               flex: 0 0 25%;<br>
+                                               max-width: 25%;<br>
+                                             }<br>
+                                             .main {<br>
+                                               flex: 0 0 75%;<br>
+                                               max-width: 75%;<br>
+                                             }<br>
+                                            }<br>
+                                            &lt/style><br>
+                                          
+                                            &ltdiv class="container"><br>
+                                            &ltmain class="main"><br>
+                                                 MAIN<br>
+                                                 &lt/main><br>
+                                                 &ltaside class="aside"><br>
+                                                 ASIDE<br>
+                                                 &lt/aside><br>
+                                                 &lt/div><br>
+                                          
+                                    </code>
+
+
+
+                            
+                            </p>
+
+                        </p>
+                        <h1 class="h-media h1-created">Приклад</h1>
+                        <p class="p-info">
+                            Щоб вищезазначені правила краще засвоїлися, пропонуємо ознайомитися з кодом, 
+                            який використовується для встановлення ширини за правилами адаптивної верстки:<br>
+                            <code class = 'code-example'>
+                                @media all (min-width: 1200px) {<br>
+                                    div {<br>
+                                    width: 800px<br>
+                                    }<br>
+                                    }<br>
+                                    @media all (min-width: 400px) {<br>
+                                    div {<br>
+                                    width: 350px<br>
+                                    }<br>
+                                    }<br>
+                                  
+                            </code>
+                            А цей код вказує ширину та висоту сторінки:<br>
+                            <code class="code-example">
+                                @media all (min-width: 1200px) {<br>
+                                    div {<br>
+                                    width: 800px<br>
+                                    }<br>
+                                    }<br>
+                                    @media all (min-width: 400px) {<br>
+                                    div {<br>
+                                    width: 350px<br>
+                                    }<br>
+                                    }<br>
+                                  
+                            </code>
+                            Щільність пікселів, орієнтація сторінки задаються так само.<br>
+                        </p>
+                    </div>
+                    
+                    <div class = 'row'>
+                        <h1 class = 'h-media h1-created' >Заключення</h1>
+                        <p class = 'p-info'>
+                            Медіа-запити є важливим елементом створення оптимізованого дизайну сайту.
+                            Вони керують стилями, орієнтуючись на технічні характеристики пристроїв. 
+                            Це означає, що CSS-таблиці активуватимуться лише після визначення того, 
+                            де саме запускається ресурс. У загальному вигляді медіа-запит складатиметься з ключового слова, 
+                            що оголошує тип пристрою, а також вирази для перевірки його характеристик.
+                        </p>
+                    </div>
+                    
+        </div>
+        <div class = 'btn_controllers'>
+          <div class="container-btns">
+            <button class = 'btn_prev btn_red'  onclick="window.location.href = 'media.html'"><span class = 'p-info' >Тема 2</span></button>
+            <button class = 'btn_next btn_red' onclick="window.location.href = 'examples.html'"><span class = 'p-info'>Приклади</span></button>
+          </div>
+        </div>
+    </div>
+
+        
+        
+        </div>
+
+
+
+      <footer>  
+        <div class = 'footer-conent'>
+          <div class="container-fluid">
+          <div class = 'footer-container'>
+            
+              <div class = 'footer-title-imgs-1'>               
+                <div class = 'footer-span-text'> <a href = 'index.html'><img class='first-img footer-img footer-img-1' src="kurs_imgs/general.png" alt="">  </a>
+                  <a href="index.html"><span class = 'ff'>Головна</span></a>
+                </div> 
+                
+                <div class = 'footer-span-text sec-box'> <a href = 'redirect.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs/free-icon-font-book-alt-3914759.png" alt=""> </a>
+                  <a href = 'redirect.html'><span class = 'ff'>Читачу</span></a>
+                </div >             
+                <div class = 'footer-span-text th-box'> <a href = 'aboutUs.html'><img class='second-img footer-img footer-img-1' src="kurs_imgs\free-icon-font-marker-3916882.png" alt=""> </a>
+                  <a href = 'aboutUs.html'><span class = 'ff'>Про нас</span></a>
+                </div>       
+              </div>                 
+              
+            
+            <div class ='footer-title-imgs-2'>
+              <a href="https://twitter.com/knure_ua"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-twitter-6422210.png" alt=""> </div></a>
+              <a href="https://www.facebook.com/nuretv"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-facebook-6422199.png" alt=""></div></a>
+              <a href="https://www.instagram.com/nure_tv/?hl=ru"><div> <img class = 'footer-img footer-social-img' src="kurs_imgs\free-icon-font-instagram-6422200.png" alt=""> </div></a>
+            </div> 
+            
+          </div>
+      </div>
+      </footer>
+      <div class = 'upward'>
+        <img src='kurs_imgs/upbtn.png' alt="">
+      </div>
+  
+    
+      
+      
+      
+
+      
+
+
+
+    
+
+
+
+
+
+
+  
+    
+
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
